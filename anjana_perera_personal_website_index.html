@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anjana (Madushan) Perera — Entrepreneur & Tech Leader</title>
+  <meta name="description" content="Official portfolio of Anjana (Madushan) Perera — CEO & Co‑Founder at Future Solutions (LTD); Co‑Founder & Director at Spices Taprobana, The 360 LTD, and The Red LTD. Based in Sri Lanka. Business & IT leader." />
+  <meta name="theme-color" content="#0b1220" />
+  <meta property="og:title" content="Anjana (Madushan) Perera — Portfolio" />
+  <meta property="og:description" content="Entrepreneur & Tech‑savvy business leader. CEO & Co‑Founder at Future Solutions (LTD)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/0b1220/e4ecfa&text=Anjana+Perera" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Global (Professional, accessible, responsive) ===== */
+    :root{
+      --bg:#0b1220; --surface:#0f172a; --muted:#9aa4b2; --text:#e4ecfa;
+      --primary:#22d3ee; /* cyan */ --accent:#6ee7b7; /* mint */
+      --ring:#1e2a44; --shadow:0 18px 40px rgba(2,6,23,.5); --radius:18px;
+      --maxw:1200px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;background:
+      radial-gradient(1200px 600px at -10% -20%, #0d2448 0%, transparent 50%),
+      radial-gradient(1000px 600px at 110% 10%, #103047 0%, transparent 40%),
+      linear-gradient(180deg,#071022 0%, #0b1220 60%, #0b1220 100%);
+      color:var(--text);-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    img{max-width:100%;display:block}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+    .card{background:var(--surface);border:1px solid var(--ring);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);color:var(--text);text-decoration:none;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--primary));color:#062b20;border:0}
+    .muted{color:var(--muted)}
+    html{scroll-behavior:smooth}
+
+    /* ===== Navbar ===== */
+    .navbar{position:sticky;top:0;z-index:40;background:rgba(8,14,28,.6);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-inner{display:flex;align-items:center;gap:14px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand .logo{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08);font-weight:900}
+    .brand .name{font-weight:800;letter-spacing:-.3px}
+    .navlinks{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+    .navlinks a{padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--muted);border:1px solid transparent}
+    .navlinks a:hover{border-color:rgba(255,255,255,.08);color:var(--text)}
+    .wallet{display:flex;gap:10px;align-items:center}
+    .wallet .status{font-size:13px;color:var(--muted)}
+    .wallet button{padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);color:var(--muted);cursor:pointer}
+
+    /* ===== Hero ===== */
+    .hero{padding:36px 0}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+    @media (max-width:960px){.hero-grid{grid-template-columns:1fr}}
+    .profile-card{padding:22px;display:grid;grid-template-columns:120px 1fr;gap:16px}
+    .avatar{width:110px;height:110px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08);font-weight:900;font-size:28px;color:var(--muted)}
+    .roles{color:var(--muted);font-weight:600}
+    .kpis{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .kpi{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.04);border:1px dashed rgba(255,255,255,.08);color:var(--muted);font-size:13px}
+
+    /* ===== Sections ===== */
+    .section{padding:22px;margin-bottom:22px}
+    .section h2{margin:0 0 12px 0;font-size:20px}
+
+    /* timelines */
+    .timeline{position:relative;padding-left:18px}
+    .timeline::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:rgba(255,255,255,.08)}
+    .tl-item{position:relative;padding:12px 0 12px 12px;border-top:1px dashed rgba(255,255,255,.06)}
+    .tl-item:first-child{border-top:0}
+    .tl-item .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(180deg,var(--accent),var(--primary));position:absolute;left:0;transform:translateX(-50%);margin-top:4px}
+    .tl-title{font-weight:700}
+
+    /* skills */
+    .skills{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media (max-width:720px){.skills{grid-template-columns:1fr}}
+    .bar{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden}
+    .bar .fill{height:10px;background:linear-gradient(90deg,var(--accent),var(--primary));width:0}
+    .bar[data-val="90"] .fill{width:90%}
+    .bar[data-val="85"] .fill{width:85%}
+    .bar[data-val="80"] .fill{width:80%}
+    .bar[data-val="70"] .fill{width:70%}
+    .skill-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+
+    /* ventures grid */
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    @media (max-width:900px){.cards{grid-template-columns:1fr}}
+    .work{padding:16px;display:flex;flex-direction:column;gap:10px}
+    .work h3{margin:0;font-size:16px}
+    .work p{margin:0;color:var(--muted);font-size:14px}
+
+    /* contact */
+    form.contact{display:grid;gap:10px}
+    .input{padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);color:#dbeafe}
+
+    /* footer */
+    footer{margin-top:24px;border-top:1px solid rgba(255,255,255,.08);color:var(--muted)}
+    footer .row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:18px 0}
+
+    /* subtle entrance animation */
+    .fade-in{opacity:0;transform:translateY(10px);animation:fade .6s ease forwards}
+    .fade-in:nth-child(2){animation-delay:.06s}
+    .fade-in:nth-child(3){animation-delay:.12s}
+    @keyframes fade{to{opacity:1;transform:none}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anjana (Madushan) Perera",
+    "jobTitle": "CEO & Co‑Founder, Future Solutions (LTD)",
+    "address": {"@type": "PostalAddress", "addressCountry": "Sri Lanka"},
+    "alumniOf": [
+      "University of Michigan",
+      "Indian School of Business",
+      "Kennesaw State University",
+      "The University of New Mexico",
+      "University of Colorado Boulder",
+      "University of Minnesota"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" role="banner">
+    <div class="container nav-inner">
+      <a class="brand" href="#" aria-label="Homepage">
+        <div class="logo" aria-hidden="true"><img src="APdgd.png" width="47" height="47"></div>
+        <div>
+          <div class="name">Anjana M Perera</div>
+          <div class="muted" style="font-weight:600"></div>
+        </div>
+      </a>
+      <nav class="navlinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#ventures">Ventures</a>
+        <a href="#contact">Contact</a>
+        <div class="wallet" aria-live="polite">
+          <span class="status" id="walletStatus">Not connected</span>
+          <button id="connectWalletBtn" aria-label="Connect crypto wallet">Connect</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="card profile-card fade-in">
+        <div class="" aria-hidden="true">
+          <div align="center"><img src="apweb 2.png" width="222" height="263"></div>
+        </div>
+        <div>
+          <h1 style="margin:0 0 6px 0">Anjana M Perera</h1>
+          <div class="roles">CEO & Co‑Founder — Future Solutions LTD · Co‑Founder & Director — Spices Taprobana · The 360 LTD · The Red LTD</div>
+          <div class="kpis" role="list" aria-label="Quick facts">
+            <span class="kpi" role="listitem">Sri Lanka</span>
+            <span class="kpi" role="listitem">Business & IT</span>
+            <span class="kpi" role="listitem">Leadership • Strategy • Innovation</span>
+          </div>
+          <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn btn-primary" href="#contact">Work with me</a>
+            <a class="btn" href="#ventures">Explore ventures</a>
+          </div>
+		  
+		  
+		  
+		  
+        </div>
+      </div>
+      <div class="card fade-in" style="padding:22px">
+        <h2 style="margin-top:0">About</h2>
+        <p class="muted" style="line-height:1.7">As a passionate entrepreneur and innovator, I thrive at the intersection of business and technology. I lead Future Solutions (LTD) as CEO & Co‑Founder and hold leadership roles as Co‑Founder & Director at Spices Taprobana (PVT) Ltd, The 360 LTD, and The Red LTD. My mission is to drive transformation through innovative solutions, bringing fresh perspectives to the industries I engage in. I constantly learn, adapt, and implement strategies that create real impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="container" role="main">
+    <section id="experience" class="card section fade-in" aria-labelledby="exp-title">
+      <h2 id="exp-title">Experience</h2>
+      <div class="timeline" role="list">
+        <div class="tl-item" role="listitem"><span class="dot"></span>
+          <div class="tl-title">Future Solutions (LTD) — CEO & Co‑Founder</div>
+          <div class="muted">Oct 2015 — Present · Sri Lanka · Full‑time</div>
+          <div class="muted">Business Development · International Trade · +16 skills</div>
+        </div>
+        <div class="tl-item" role="listitem"><span class="dot"></span>
+          <div class="tl-title">The Red (LTD) — Co‑Founder & Director</div>
+          <div class="muted">Aug 2019 — Present · Western Province, Sri Lanka · Hybrid</div>
+          <div class="muted">Business Development · Sales Management · +8 skills</div>
+        </div>
+        <div class="tl-item" role="listitem"><span class="dot"></span>
+          <div class="tl-title">Spices Taprobana (LTD)— Co‑Founder & Director</div>
+          <div class="muted">Mar 2019 — Present · Full‑time</div>
+          <div class="muted">Business Development · International Trade · +8 skills</div>
+        </div>
+        <div class="tl-item" role="listitem"><span class="dot"></span>
+          <div class="tl-title">The 360 (LTD) — Co‑Founder & Director</div>
+          <div class="muted">Mar 2019 — Present · Full‑time</div>
+          <div class="muted">Business Development · Management · +12 skills</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="card section fade-in" aria-labelledby="edu-title">
+      <h2 id="edu-title">Education & Certificates</h2>
+      <div class="timeline" role="list">
+        <div class="tl-item" role="listitem"><span class="dot"></span>
+          <div class="tl-title">University of Michigan</div>
+          <div class="muted">Leading People and Teams</div>
+        </div>
+        <div class="tl-item" role="listitem"><span class="dot"></span>
+          <div class="tl-title">Indian School of Business</div>
+          <div class="muted">Business Technology Management</div>
+        </div>
+        <div class="tl-item" role="listitem"><span class="dot"></span>
+          <div class="tl-title">Kennesaw State University — CCSE</div>
+          <div class="muted">Cyber Security</div>
+        </div>
+        <div class="tl-item" role="listitem"><span class="dot"></span>
+          <div class="tl-title">The University of New Mexico</div>
+          <div class="muted">International Business</div>
+        </div>
+        <div class="tl-item" role="listitem"><span class="dot"></span>
+          <div class="tl-title">University of Colorado Boulder</div>
+          <div class="muted">Business Analytics</div>
+        </div>
+        <div class="tl-item" role="listitem"><span class="dot"></span>
+          <div class="tl-title">University of Minnesota</div>
+          <div class="muted">HR for People Managers</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="card section fade-in" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills & Focus Areas</h2>
+      <div class="skills">
+        <div>
+          <div class="skill-row"><strong>Business Development</strong><span class="muted">90%</span></div>
+          <div class="bar" data-val="90" aria-label="Business Development: 90%"><div class="fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"></div></div>
+        </div>
+        <div>
+          <div class="skill-row"><strong>International Trade</strong><span class="muted">85%</span></div>
+          <div class="bar" data-val="85" aria-label="International Trade: 85%"><div class="fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"></div></div>
+        </div>
+        <div>
+          <div class="skill-row"><strong>Sales Management</strong><span class="muted">80%</span></div>
+          <div class="bar" data-val="80" aria-label="Sales Management: 80%"><div class="fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"></div></div>
+        </div>
+        <div>
+          <div class="skill-row"><strong>Strategic Planning</strong><span class="muted">90%</span></div>
+          <div class="bar" data-val="90" aria-label="Strategic Planning: 90%"><div class="fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"></div></div>
+        </div>
+        <div>
+          <div class="skill-row"><strong>Business Analytics</strong><span class="muted">80%</span></div>
+          <div class="bar" data-val="80" aria-label="Business Analytics: 80%"><div class="fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"></div></div>
+        </div>
+        <div>
+          <div class="skill-row"><strong>Cyber Security</strong><span class="muted">70%</span></div>
+          <div class="bar" data-val="70" aria-label="Cyber Security: 70%"><div class="fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ventures" class="card section fade-in" aria-labelledby="ventures-title">
+      <h2 id="ventures-title">Ventures</h2>
+      <div class="cards">
+        <article class="card work" aria-label="Future Solutions (LTD)">
+          <h3>Future Solutions (LTD)</h3>
+          <p>CEO & Co‑Founder. Driving product strategy and growth at the intersection of business and technology.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="kpi">Leadership</span><span class="kpi">Strategy</span><span class="kpi">Innovation</span></div>
+        </article>
+        <article class="card work" aria-label="The Red (LTD)">
+          <h3>The Red (LTD)</h3>
+          <p>Co‑Founder & Director. Leading business development and sales management across hybrid operations.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="kpi">Sales</span><span class="kpi">Growth</span><span class="kpi">Operations</span></div>
+        </article>
+        <article class="card work" aria-label="Spices Taprobana (PVT) Ltd">
+          <h3>Spices Taprobana (PVT) Ltd</h3>
+          <p>Co‑Founder & Director. International trade and expansion for premium Sri Lankan spices.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="kpi">Trade</span><span class="kpi">Export</span><span class="kpi">Brand</span></div>
+        </article>
+        <article class="card work" aria-label="The 360 LTD">
+          <h3>The 360 LTD</h3>
+          <p>Co‑Founder & Director. Building resilient on‑site operations in Colombo.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="kpi">Operations</span><span class="kpi">On‑site</span><span class="kpi">Management</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card section fade-in" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p class="muted">Available for collaborations, advisory, and partnerships. Based in Sri Lanka — open to local & international work.</p>
+      <form id="contactForm" class="contact" aria-describedby="contact-help">
+        <span id="contact-help" class="sr-only" style="position:absolute;left:-9999px">The form opens your mail app to send the message.</span>
+        <input class="input" type="text" name="name" placeholder="Your name" required aria-label="Your name">
+        <input class="input" type="email" name="email" placeholder="Your email" required aria-label="Your email">
+        <textarea class="input" name="message" rows="5" placeholder="Project / message" required aria-label="Your message"></textarea>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <a class="btn" href="mailto:youremail@example.com">Or email directly</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container row">
+      <div>© <strong>Anjana M Perera</strong> · Sri Lanka</div>
+      <div style="display:flex;gap:12px">
+        <a href="#top">Top</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ===== Contact (mailto) =====
+    (function(){
+      const form = document.getElementById('contactForm');
+      form.addEventListener('submit', (ev) => {
+        ev.preventDefault();
+        const data = new FormData(form);
+        const subject = encodeURIComponent('Portfolio enquiry from ' + (data.get('name') || 'anonymous'));
+        const body = encodeURIComponent('From: ' + data.get('email') + '
+
+' + data.get('message'));
+        window.location.href = 'mailto:youremail@example.com?subject=' + subject + '&body=' + body;
+      });
+    })();
+
+    // ===== Wallet (MetaMask) — safe & defensive =====
+    (function(){
+      const connectBtn = document.getElementById('connectWalletBtn');
+      const statusEl = document.getElementById('walletStatus');
+      const METAMASK_DOWNLOAD = 'https://metamask.io/download.html';
+      let currentAccount = null;
+
+      function installed(){
+        try { return typeof window.ethereum !== 'undefined' && !!window.ethereum.isMetaMask; } catch(e){ return false; }
+      }
+      function short(addr){ return addr ? (addr.slice(0,6)+'...'+addr.slice(-4)) : ''; }
+      function setStatus(t){ statusEl.textContent = t; }
+
+      async function connect(){
+        if(!installed()){
+          setStatus('MetaMask not detected');
+          window.open(METAMASK_DOWNLOAD,'_blank');
+          return;
+        }
+        try{
+          setStatus('Requesting access...');
+          const accts = await window.ethereum.request({ method:'eth_requestAccounts' });
+          onAccounts(accts);
+          try{ const chain = await window.ethereum.request({ method:'eth_chainId' }); onChain(chain); }catch(e){ console.warn('chainId error', e); }
+        }catch(err){
+          console.error('Failed to connect to MetaMask', err);
+          setStatus(err && err.code===4001 ? 'Request rejected by user' : ('Connection failed: '+(err?.message || err)));
+        }
+      }
+
+      function onAccounts(accts){
+        if(!accts || !accts.length){
+          currentAccount = null; connectBtn.textContent = 'Connect'; setStatus('Not connected');
+        }else{
+          currentAccount = accts[0]; connectBtn.textContent = short(currentAccount) + ' (Disconnect)'; setStatus('Connected: '+short(currentAccount));
+        }
+      }
+      function onChain(chainId){ if(currentAccount){ setStatus('Connected ('+chainId+') · '+short(currentAccount)); } }
+      function disconnectUI(){ currentAccount=null; connectBtn.textContent='Connect'; setStatus('Not connected'); }
+
+      connectBtn.addEventListener('click', ()=>{ if(currentAccount){ disconnectUI(); } else { connect(); } });
+
+      function attach(){ if(!window.ethereum || !window.ethereum.on) return; window.ethereum.on('accountsChanged', onAccounts); window.ethereum.on('chainChanged', onChain); }
+
+      // Init
+      if(installed()){ setStatus('MetaMask detected'); attach(); } else { setStatus('Not connected'); }
+
+      // Prevent noisy unhandled promise rejections
+      window.addEventListener('unhandledrejection', (e)=>{ e.preventDefault(); console.error(e.reason); setStatus('Unexpected error: '+(e.reason?.message || e.reason)); });
+
+      // ===== Lightweight Test Harness (no external libs) =====
+      // Ensures the wallet UI behavior is correct in common scenarios.
+      (function runWalletTests(){
+        const results = [];
+        function ok(name, cond){ results.push((cond? 'PASS':'FAIL') + ' — ' + name); }
+        try{
+          // Test 1: No provider path should show Not connected
+          const hadProvider = !!window.ethereum;
+          const saved = window.ethereum;
+          delete window.ethereum;
+          setStatus('');
+          connectBtn.click(); // should open download, but we only assert status becomes 'MetaMask not detected'
+          ok('No provider sets status', statusEl.textContent.indexOf('MetaMask not detected')>-1);
+          // restore
+          if(hadProvider) window.ethereum = saved; else delete window.ethereum;
+
+          // Test 2: Mock provider (#dev like) — simulate connect
+          window.ethereum = {
+            isMetaMask:true,
+            _acc:'0xDEADBEEF000000000000000000000000DEADBEEF',
+            request: async ({method})=>{
+              if(method==='eth_requestAccounts' || method==='eth_accounts') return [window.ethereum._acc];
+              if(method==='eth_chainId') return '0x1';
+              throw new Error('Mock unsupported '+method);
+            }, on:()=>{}
+          };
+          disconnectUI();
+          connectBtn.click(); // triggers connect
+          setTimeout(()=>{
+            ok('Mock connect updates button', connectBtn.textContent.indexOf('Disconnect')>-1);
+            ok('Mock connect updates status', statusEl.textContent.indexOf('Connected:')===0 || statusEl.textContent.indexOf('Connected (')===0);
+
+            // Test 3: Disconnect toggles UI
+            connectBtn.click();
+            ok('Disconnect clears state', statusEl.textContent==='Not connected');
+            console.log('[Wallet Tests]
+' + results.join('
+'));
+          }, 0);
+        }catch(e){ console.warn('Test harness error', e); }
+      })();
+    })();
+  </script>
+</body>
+</html>
