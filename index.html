@@ -1,19 +1,19 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Anjana Perera — Entrepreneur & Tech Leader</title>
-  <meta name="description" content="Official portfolio of Anjana M Perera — CEO & Co‑Founder at Future Solutions LTD; Co‑Founder & Director at Spices Taprobana LTD, The 360 LTD, and The Red LTD. Based in Sri Lanka. Business & IT leader." />
-  <meta name="theme-color" content="#0b1220" />
-  <meta property="og:title" content="Anjana Perera — Portfolio" />
-  <meta property="og:description" content="Entrepreneur & Tech‑savvy business leader. CEO & Co‑Founder at Future Solutions (LTD)." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://dummyimage.com/1200x630/0b1220/e4ecfa&text=Anjana+Perera" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anjana M Perera — Business; Entrepreneur &amp; Tech Leader</title>
+  <meta name="description" content="Official portfolio of Anjana M Perera — CEO &amp; Co‑Founder at Future Solutions (LTD); Co‑Founder &amp; Director at Spices Taprobana, The 360 LTD, and The Red LTD. Based in Sri Lanka. Business &amp; IT leader.">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:title" content="Anjana M Perera — Portfolio">
+  <meta property="og:description" content="Entrepreneur &amp; Tech‑savvy business leader. CEO &amp; Co‑Founder at Future Solutions (LTD).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://dummyimage.com/1200x630/0b1220/e4ecfa&amp;text=Anjana+Perera">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="../llAnjana (Madushan) Perera — Entrepreneur & Tech Leader_files/css2.css" rel="stylesheet">
   <style>
     /* ===== Global (Professional, accessible, responsive) ===== */
     :root{
@@ -99,11 +99,31 @@
     footer{margin-top:24px;border-top:1px solid rgba(255,255,255,.08);color:var(--muted)}
     footer .row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:18px 0}
 
+    /* Certifications Section */
+    .certs-filters {display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;}
+    .cert-filter-btn {padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); color: var(--muted); cursor: pointer; font-size: 14px; transition: all 0.2s ease;}
+    .cert-filter-btn:hover, .cert-filter-btn.active {background: linear-gradient(90deg, var(--accent), var(--primary)); color: #062b20; border-color: transparent;}
+    .certs-container {display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;}
+    .cert-card {padding: 16px; border-radius: var(--radius); background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); transition: all 0.3s ease;}
+    .cert-card:hover {transform: translateY(-3px); box-shadow: 0 10px 25px rgba(0,0,0,0.2);}
+    .cert-card h3 {margin: 0 0 8px 0; font-size: 16px; color: var(--primary);}
+    .cert-card .institution {font-size: 14px; color: var(--accent); margin-bottom: 8px;}
+    .cert-card .category {display: inline-block; padding: 4px 8px; border-radius: 999px; background: rgba(255,255,255,.06); font-size: 12px; color: var(--muted); margin-top: 8px;}
+    .view-more-btn {display: block; margin: 20px auto 0; text-align: center;}
+
     /* subtle entrance animation */
     .fade-in{opacity:0;transform:translateY(10px);animation:fade .6s ease forwards}
     .fade-in:nth-child(2){animation-delay:.06s}
     .fade-in:nth-child(3){animation-delay:.12s}
     @keyframes fade{to{opacity:1;transform:none}}
+  .style1 {font-size: 36px}
+  .style2 {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-weight: bold;
+	font-size: 30px;
+}
   </style>
   <script type="application/ld+json">
   {
@@ -128,24 +148,24 @@
   <header class="navbar" role="banner">
     <div class="container nav-inner">
       <a class="brand" href="#" aria-label="Homepage">
-        <div class="logo" aria-hidden="true"><img src="APdgd.png" width="47" height="47"></div>
-        <div>
-          <div class="name">Anjana M Perera</div>
+        <div class="logo" aria-hidden="true"><img src="../llAnjana (Madushan) Perera — Entrepreneur & Tech Leader_files/APdgd.png" width="70" height="60"></div>
+      </a><div>
+          <div class="name style1"><a href="#" class="style2" aria-label="Homepage">Anjana M Perera</a></div>
           <div class="muted" style="font-weight:600"></div>
         </div>
-      </a>
+      <a class="brand" href="#" aria-label="Homepage"></a>
       <nav class="navlinks" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
         <a href="#skills">Skills</a>
         <a href="#ventures">Ventures</a>
         <a href="#contact">Contact</a>
-        <div class="wallet" aria-live="polite">
-          <span class="status" id="walletStatus">Not connected</span>
-          <button id="connectWalletBtn" aria-label="Connect crypto wallet">Connect</button>
-        </div>
-      </nav>
+		<a href="https://lk.linkedin.com/in/anjana-perera-2b384b213?trk=people-guest_people_search-card">Connect</a>
+        
+        
+         
     </div>
   </header>
 
@@ -154,29 +174,33 @@
     <div class="container hero-grid">
       <div class="card profile-card fade-in">
         <div class="" aria-hidden="true">
-          <div align="center"><img src="apweb 2.png" width="222" height="263"></div>
+          <div align="center"><img src="../llAnjana (Madushan) Perera — Entrepreneur & Tech Leader_files/apweb 2.png" width="220" height="256"></div>
         </div>
         <div>
           <h1 style="margin:0 0 6px 0">Anjana M Perera</h1>
-          <div class="roles">CEO & Co‑Founder — Future Solutions LTD · Co‑Founder & Director — Spices Taprobana · The 360 LTD · The Red LTD</div>
+          <div class="roles">CEO &amp; Co‑Founder — Future Solutions LTD · Co‑Founder &amp; Director — Spices Taprobana · The 360 LTD · The Red LTD</div>
           <div class="kpis" role="list" aria-label="Quick facts">
             <span class="kpi" role="listitem">Sri Lanka</span>
-            <span class="kpi" role="listitem">Business & IT</span>
-            <span class="kpi" role="listitem">Leadership • Strategy • Innovation</span>
+            <span class="kpi" role="listitem">Business &amp; IT</span>
+			<span class="kpi" role="listitem">Future Solutions LTD</span>
+            <span class="kpi" role="listitem">Leadership • Strategy • Innovation • Professional • Business </span>
           </div>
           <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
             <a class="btn btn-primary" href="#contact">Work with me</a>
-            <a class="btn" href="#ventures">Explore ventures</a>
+            <a class="btn" href="#certifications">View Certifications</a>
           </div>
-		  
-		  
-		  
-		  
         </div>
       </div>
       <div class="card fade-in" style="padding:22px">
         <h2 style="margin-top:0">About</h2>
-        <p class="muted" style="line-height:1.7">As a passionate entrepreneur and innovator, I thrive at the intersection of business and technology. I lead Future Solutions (LTD) as CEO & Co‑Founder and hold leadership roles as Co‑Founder & Director at Spices Taprobana (PVT) Ltd, The 360 LTD, and The Red LTD. My mission is to drive transformation through innovative solutions, bringing fresh perspectives to the industries I engage in. I constantly learn, adapt, and implement strategies that create real impact.</p>
+        <p class="muted" style="line-height:1.7">As a passionate 
+entrepreneur and innovator, I thrive at the intersection of business and
+ technology. I lead Future Solutions (LTD) as CEO &amp; Co‑Founder and 
+hold leadership roles as Co‑Founder &amp; Director at Spices Taprobana 
+(PVT) Ltd, The 360 LTD, and The Red LTD. My mission is to drive 
+transformation through innovative solutions, bringing fresh perspectives
+ to the industries I engage in. I constantly learn, adapt, and implement
+ strategies that create real impact.</p>
       </div>
     </div>
   </section>
@@ -187,22 +211,22 @@
       <h2 id="exp-title">Experience</h2>
       <div class="timeline" role="list">
         <div class="tl-item" role="listitem"><span class="dot"></span>
-          <div class="tl-title">Future Solutions (LTD) — CEO & Co‑Founder</div>
+          <div class="tl-title">Future Solutions (LTD) — CEO &amp; Co‑Founder</div>
           <div class="muted">Oct 2015 — Present · Sri Lanka · Full‑time</div>
           <div class="muted">Business Development · International Trade · +16 skills</div>
         </div>
         <div class="tl-item" role="listitem"><span class="dot"></span>
-          <div class="tl-title">The Red (LTD) — Co‑Founder & Director</div>
+          <div class="tl-title">The Red (LTD) — Co‑Founder &amp; Director</div>
           <div class="muted">Aug 2019 — Present · Western Province, Sri Lanka · Hybrid</div>
           <div class="muted">Business Development · Sales Management · +8 skills</div>
         </div>
         <div class="tl-item" role="listitem"><span class="dot"></span>
-          <div class="tl-title">Spices Taprobana (LTD)— Co‑Founder & Director</div>
+          <div class="tl-title">Spices Taprobana (LTD)— Co‑Founder &amp; Director</div>
           <div class="muted">Mar 2019 — Present · Full‑time</div>
           <div class="muted">Business Development · International Trade · +8 skills</div>
         </div>
         <div class="tl-item" role="listitem"><span class="dot"></span>
-          <div class="tl-title">The 360 (LTD) — Co‑Founder & Director</div>
+          <div class="tl-title">The 360 (LTD) — Co‑Founder &amp; Director</div>
           <div class="muted">Mar 2019 — Present · Full‑time</div>
           <div class="muted">Business Development · Management · +12 skills</div>
         </div>
@@ -210,7 +234,7 @@
     </section>
 
     <section id="education" class="card section fade-in" aria-labelledby="edu-title">
-      <h2 id="edu-title">Education & Certificates</h2>
+      <h2 id="edu-title">Education &amp; Certificates</h2>
       <div class="timeline" role="list">
         <div class="tl-item" role="listitem"><span class="dot"></span>
           <div class="tl-title">University of Michigan</div>
@@ -218,11 +242,11 @@
         </div>
         <div class="tl-item" role="listitem"><span class="dot"></span>
           <div class="tl-title">Indian School of Business</div>
-          <div class="muted">Business Technology Management</div>
+          <div class="muted">Business Technology Management and Finance (Specialization)</div>
         </div>
         <div class="tl-item" role="listitem"><span class="dot"></span>
           <div class="tl-title">Kennesaw State University — CCSE</div>
-          <div class="muted">Cyber Security</div>
+          <div class="muted">Cyber security and Managing Network Security</div>
         </div>
         <div class="tl-item" role="listitem"><span class="dot"></span>
           <div class="tl-title">The University of New Mexico</div>
@@ -234,13 +258,735 @@
         </div>
         <div class="tl-item" role="listitem"><span class="dot"></span>
           <div class="tl-title">University of Minnesota</div>
-          <div class="muted">HR for People Managers</div>
+          <div class="muted"> Human Resource Management: HR for People Managers (Specialization)</div>
+        </div>
+		 <div class="tl-item" role="listitem"><span class="dot"></span>
+          <div class="tl-title">Yale University</div>
+          <div class="muted">Financial Markets (WITH HONORS)</div>
+        </div>
+        <div class="tl-item" role="listitem"><span class="dot"></span>
+          <div class="tl-title">Rice University - Susanne M. Glasscock School of Continuing Studies</div>
+          <div class="muted"> Global Financial Markets and Instruments</div>
         </div>
       </div>
     </section>
 
+    
+	<div class="container">
+      <header>
+            <h1>Core University Certifications</h1>
+            <p class="subtitle"><span class="muted" style="margin-bottom: 20px;">A comprehensive 
+collection of certifications from world-renowned universities, 
+demonstrating expertise across business, technology, finance, and 
+leadership domains.</span></p>
+              </header>
+
+        <div class="stats">
+            <h2>Certification Overview</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label">Total Certifications</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Universities</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Fields of Expertise</div>
+                </div>
+            </div>
+        </div>
+
+	
+	<!-- NEW CERTIFICATIONS SECTION -->
+    <section id="certifications" class="card section fade-in" aria-labelledby="certs-title">
+      <link rel="stylesheet" href="../llAnjana (Madushan) Perera — Entrepreneur & Tech Leader_files/all.min.css">
+    <style>
+        :root {
+            --primary: #22d3ee;
+            --accent: #6ee7b7;
+            --dark: #0b1220;
+            --surface: #0f172a;
+            --text: #e4ecfa;
+            --muted: #9aa4b2;
+            --ring: #1e2a44;
+            --radius: 18px;
+            --shadow: 0 18px 40px rgba(2, 6, 23, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: radial-gradient(1200px 600px at -10% -20%, #0d2448 0%, transparent 50%),
+                        radial-gradient(1000px 600px at 110% 10%, #103047 0%, transparent 40%),
+                        linear-gradient(180deg, #071022 0%, #0b1220 60%, #0b1220 100%);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, var(--accent), var(--primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            border-color: var(--primary);
+            background: rgba(34, 211, 238, 0.1);
+        }
+
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--muted);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: linear-gradient(90deg, var(--accent), var(--primary));
+            color: #062b20;
+            border-color: transparent;
+        }
+
+        .category {
+            margin-bottom: 40px;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .cert-card {
+            background: var(--surface);
+            border: 1px solid var(--ring);
+            border-radius: var(--radius);
+            padding: 20px;
+            transition: all 0.3s ease;
+
+            box-shadow: var(--shadow);
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .cert-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .institution {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.06);
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-top: 10px;
+        }
+
+        .stats {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: var(--radius);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .stat-item {
+            padding: 20px;
+            background: var(--surface);
+            border-radius: var(--radius);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--accent), var(--primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            color: var(--muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        @media (max-width: 768px) {
+            .certifications-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .category-title {
+                font-size: 1.5rem;
+            }
+            
+            .filters {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .filter-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+         <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Certifications</button>
+            <button class="filter-btn" data-filter="business">Business & Leadership</button>
+            <button class="filter-btn" data-filter="marketing">Marketing & Strategy</button>
+            <button class="filter-btn" data-filter="finance">Finance & Economics</button>
+            <button class="filter-btn" data-filter="tech">Technology & Data Science</button>
+            <button class="filter-btn" data-filter="operations">Project & Operations</button>
+            <button class="filter-btn" data-filter="other">Other Fields</button>
+        </div>
+
+        <section class="category" data-category="business">
+            <h2 class="category-title">
+                <i class="fas fa-chart-line"></i> Business, Management, and Leadership
+            </h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h3>Business Analytics for Decision Making</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Colorado Boulder
+                    </div>
+                    <span class="category-badge">Business Analytics</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Customer-Centric IT Strategy</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Virginia
+                    </div>
+                    <span class="category-badge">IT Strategy</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Successful Negotiation: Essential Strategies and Skills</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Michigan
+                    </div>
+                    <span class="category-badge">Negotiation</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Inspiring and Motivating Individuals</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Michigan
+                    </div>
+                    <span class="category-badge">Leadership</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Leading People and Teams Capstone</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Michigan
+                    </div>
+                    <span class="category-badge">Team Leadership</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Managing Talent</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Michigan
+                    </div>
+                    <span class="category-badge">Talent Management</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Human Resources Management Capstone</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Minnesota
+                    </div>
+                    <span class="category-badge">HR Management</span>
+                </div>
+                <div class="cert-card">
+                    <h3>The Manager's Toolkit: A Practical Guide</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of London
+                    </div>
+                    <span class="category-badge">Management</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="category" data-category="marketing">
+            <h2 class="category-title">
+                <i class="fas fa-bullhorn"></i> Marketing and Strategy
+            </h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h3>Positioning: Marketing Strategy</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> IE Business School
+                    </div>
+                    <span class="category-badge">Marketing Strategy</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Introduction to International Marketing</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Yonsei University
+                    </div>
+                    <span class="category-badge">International Marketing</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Marketing Mix Fundamentals</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> IE Business School
+                    </div>
+                    <span class="category-badge">Marketing Fundamentals</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Channel Management and Retailing</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> IE Business School
+                    </div>
+                    <span class="category-badge">Channel Management</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Market Research and Consumer Behavior</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> IE Business School
+                    </div>
+                    <span class="category-badge">Market Research</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Pricing Strategy</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> IE Business School
+                    </div>
+                    <span class="category-badge">Pricing Strategy</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Integrated Marketing Communications</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> IE Business School
+                    </div>
+                    <span class="category-badge">Marketing Communications</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Brand and Product Management</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> IE Business School
+                    </div>
+                    <span class="category-badge">Brand Management</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Digital Media and Marketing Strategies</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Illinois
+                    </div>
+                    <span class="category-badge">Digital Marketing</span>
+                </div>
+                <div class="cert-card">
+                    <h3>New Models of Business in Society</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Virginia
+                    </div>
+                    <span class="category-badge">Business Models</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="category" data-category="finance">
+            <h2 class="category-title">
+                <i class="fas fa-chart-pie"></i> Finance and Economics
+            </h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h3>Financial Markets (with honors)</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Yale University
+
+                    </div>
+                    <span class="category-badge">Financial Markets</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Global Financial Markets and Instruments</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Rice University
+                    </div>
+                    <span class="category-badge">Global Finance</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Securing Investment Returns in the Long Run</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Geneva
+                    </div>
+                    <span class="category-badge">Investment Strategy</span>
+                </div>
+                <div class="cert-card">
+                    <h3>The Role of Global Capital Markets</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Melbourne
+                    </div>
+                    <span class="category-badge">Capital Markets</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Accounting and Finance for IT Professionals</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Indian School of Business
+                    </div>
+                    <span class="category-badge">Finance & IT</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Portfolio and Risk Management</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Indian School of Business
+                    </div>
+                    <span class="category-badge">Risk Management</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="category" data-category="tech">
+            <h2 class="category-title">
+                <i class="fas fa-laptop-code"></i> Technology, IT, and Data Science
+            </h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h3>Fundamentals of Network Communication</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Colorado
+                    </div>
+                    <span class="category-badge">Networking</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Managing Network Security</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University System of Georgia
+                    </div>
+                    <span class="category-badge">Network Security</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Cybersecurity and Its Ten Domains</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University System of Georgia
+                    </div>
+                    <span class="category-badge">Cybersecurity</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Practical Machine Learning</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Johns Hopkins University
+                    </div>
+                    <span class="category-badge">Machine Learning</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Developing Data Products</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Johns Hopkins University
+                    </div>
+                    <span class="category-badge">Data Products</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Text Mining and Analytics</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Illinois
+                    </div>
+                    <span class="category-badge">Text Mining</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Deep Learning for Business</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Yonsei University
+                    </div>
+                    <span class="category-badge">Deep Learning</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Introduction to Blockchain Technologies</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> INSEAD
+                    </div>
+                    <span class="category-badge">Blockchain</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Getting Started with AWS Machine Learning</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Amazon Web Services
+                    </div>
+                    <span class="category-badge">AWS ML</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="category" data-category="operations">
+            <h2 class="category-title">
+                <i class="fas fa-tasks"></i> Project and Operations Management
+            </h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h3>Budgeting and Scheduling Projects</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of California, Irvine
+                    </div>
+                    <span class="category-badge">Project Management</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Initiating and Planning Projects</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of California, Irvine
+                    </div>
+                    <span class="category-badge">Project Planning</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Supply Chain Analytics Essentials</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Rutgers University
+                    </div>
+                    <span class="category-badge">Supply Chain</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Innovation for Entrepreneurs</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Maryland, College Park
+                    </div>
+                    <span class="category-badge">Innovation</span>
+                </div>
+                <div class="cert-card">
+                    <h3>IT Project Management</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Indian School of Business
+                    </div>
+                    <span class="category-badge">IT Project Management</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="category" data-category="other">
+            <h2 class="category-title">
+                <i class="fas fa-graduation-cap"></i> Other Fields (Law, Design, Communication)
+            </h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h3>Introduction to International Criminal Law</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Case Western Reserve University
+                    </div>
+                    <span class="category-badge">International Law</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Graphic Design</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Colorado Boulder
+                    </div>
+                    <span class="category-badge">Design</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Introduction to Communication Science</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Amsterdam
+                    </div>
+                    <span class="category-badge">Communication</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© Anjana M Perera. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const categories = document.querySelectorAll('.category');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    const filter = button.getAttribute('data-filter');
+                    
+                    // Show/hide categories based on filter
+                    categories.forEach(category => {
+                        if (filter === 'all' || category.getAttribute('data-category') === filter) {
+                            category.style.display = 'block';
+                        } else {
+                            category.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+        <section class="category" data-category="operations" style="display: none;">
+            <h2 class="category-title">
+                <i class="fas fa-tasks"></i> Project and Operations Management            </h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <h3>Budgeting and Scheduling Projects</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of California, Irvine                    </div>
+                    <span class="category-badge">Project Management</span>                </div>
+                <div class="cert-card">
+                    <h3>Initiating and Planning Projects</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of California, Irvine                    </div>
+                    <span class="category-badge">Project Planning</span>                </div>
+                <div class="cert-card">
+                    <h3>Supply Chain Analytics Essentials</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Rutgers University                    </div>
+                    <span class="category-badge">Supply Chain</span>                </div>
+                <div class="cert-card">
+                    <h3>Innovation for Entrepreneurs</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> University of Maryland, College Park                    </div>
+                    <span class="category-badge">Innovation</span>                </div>
+                <div class="cert-card">
+                    <h3>IT Project Management</h3>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> Indian School of Business                    </div>
+                    <span class="category-badge">IT Project Management</span>                </div>
+            </div>
+        </section>
+
+      
+
+<footer></footer>
+</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const categories = document.querySelectorAll('.category');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    const filter = button.getAttribute('data-filter');
+                    
+                    // Show/hide categories based on filter
+                    categories.forEach(category => {
+                        if (filter === 'all' || category.getAttribute('data-category') === filter) {
+                            category.style.display = 'block';
+                        } else {
+                            category.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+
+	  
+	  
+	  
+	  
+       
+
     <section id="skills" class="card section fade-in" aria-labelledby="skills-title">
-      <h2 id="skills-title">Skills & Focus Areas</h2>
+      <h2 id="skills-title">Skills &amp; Focus Areas</h2>
       <div class="skills">
         <div>
           <div class="skill-row"><strong>Business Development</strong><span class="muted">90%</span></div>
@@ -274,22 +1020,22 @@
       <div class="cards">
         <article class="card work" aria-label="Future Solutions (LTD)">
           <h3>Future Solutions (LTD)</h3>
-          <p>CEO & Co‑Founder. Driving product strategy and growth at the intersection of business and technology.</p>
+          <p>CEO &amp; Co‑Founder. Driving product strategy and growth at the intersection of business and technology.</p>
           <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="kpi">Leadership</span><span class="kpi">Strategy</span><span class="kpi">Innovation</span></div>
         </article>
         <article class="card work" aria-label="The Red (LTD)">
           <h3>The Red (LTD)</h3>
-          <p>Co‑Founder & Director. Leading business development and sales management across hybrid operations.</p>
+          <p>Co‑Founder &amp; Director. Leading business development and sales management across hybrid operations.</p>
           <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="kpi">Sales</span><span class="kpi">Growth</span><span class="kpi">Operations</span></div>
         </article>
         <article class="card work" aria-label="Spices Taprobana (PVT) Ltd">
-          <h3>Spices Taprobana (Ltd)</h3>
-          <p>Co‑Founder & Director. International trade and expansion for premium Sri Lankan spices.</p>
+          <h3>Spices Taprobana (PVT) Ltd</h3>
+          <p>Co‑Founder &amp; Director. International trade and expansion for premium Sri Lankan spices.</p>
           <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="kpi">Trade</span><span class="kpi">Export</span><span class="kpi">Brand</span></div>
         </article>
         <article class="card work" aria-label="The 360 LTD">
-          <h3>The 360 (LTD)</h3>
-          <p>Co‑Founder & Director. Building resilient on‑site operations in Colombo.</p>
+          <h3>The 360 LTD</h3>
+          <p>Co‑Founder &amp; Director. Building resilient on‑site operations in Colombo.</p>
           <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="kpi">Operations</span><span class="kpi">On‑site</span><span class="kpi">Management</span></div>
         </article>
       </div>
@@ -297,18 +1043,18 @@
 
     <section id="contact" class="card section fade-in" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact</h2>
-      <p class="muted">Available for collaborations, advisory, and partnerships. Based in Sri Lanka — open to local & international work.</p>
+      <p class="muted">Available for collaborations, advisory, and partnerships. Based in Sri Lanka — open to local &amp; international work.</p>
       <form id="contactForm" class="contact" aria-describedby="contact-help">
         <span id="contact-help" class="sr-only" style="position:absolute;left:-9999px">The form opens your mail app to send the message.</span>
-        <input class="input" type="text" name="name" placeholder="Your name" required aria-label="Your name">
-        <input class="input" type="email" name="email" placeholder="Your email" required aria-label="Your email">
-        <textarea class="input" name="message" rows="5" placeholder="Project / message" required aria-label="Your message"></textarea>
+        <input class="input" type="text" name="name" placeholder="Your name" required="" aria-label="Your name">
+        <input class="input" type="email" name="email" placeholder="Your email" required="" aria-label="Your email">
+        <textarea class="input" name="message" rows="5" placeholder="Project / message" required="" aria-label="Your message"></textarea>
         <div style="display:flex;gap:10px;flex-wrap:wrap">
           <button class="btn btn-primary" type="submit">Send Message</button>
-          <a class="btn" href="mailto:youremail@example.com">Or email directly</a>
-        </div>
+          <a class="btn" href="../officialmadushanperera@gmail.com">Or email directly</a>        </div>
       </form>
     </section>
+  </section></div>
   </main>
 
   <footer role="contentinfo">
@@ -330,9 +1076,7 @@
         ev.preventDefault();
         const data = new FormData(form);
         const subject = encodeURIComponent('Portfolio enquiry from ' + (data.get('name') || 'anonymous'));
-        const body = encodeURIComponent('From: ' + data.get('email') + '
-
-' + data.get('message'));
+        const body = encodeURIComponent('From: ' + data.get('email') + '\n\n' + data.get('message'));
         window.location.href = 'mailto:youremail@example.com?subject=' + subject + '&body=' + body;
       });
     })();
@@ -386,50 +1130,33 @@
 
       // Prevent noisy unhandled promise rejections
       window.addEventListener('unhandledrejection', (e)=>{ e.preventDefault(); console.error(e.reason); setStatus('Unexpected error: '+(e.reason?.message || e.reason)); });
+    })();
 
-      // ===== Lightweight Test Harness (no external libs) =====
-      // Ensures the wallet UI behavior is correct in common scenarios.
-      (function runWalletTests(){
-        const results = [];
-        function ok(name, cond){ results.push((cond? 'PASS':'FAIL') + ' — ' + name); }
-        try{
-          // Test 1: No provider path should show Not connected
-          const hadProvider = !!window.ethereum;
-          const saved = window.ethereum;
-          delete window.ethereum;
-          setStatus('');
-          connectBtn.click(); // should open download, but we only assert status becomes 'MetaMask not detected'
-          ok('No provider sets status', statusEl.textContent.indexOf('MetaMask not detected')>-1);
-          // restore
-          if(hadProvider) window.ethereum = saved; else delete window.ethereum;
-
-          // Test 2: Mock provider (#dev like) — simulate connect
-          window.ethereum = {
-            isMetaMask:true,
-            _acc:'0xDEADBEEF000000000000000000000000DEADBEEF',
-            request: async ({method})=>{
-              if(method==='eth_requestAccounts' || method==='eth_accounts') return [window.ethereum._acc];
-              if(method==='eth_chainId') return '0x1';
-              throw new Error('Mock unsupported '+method);
-            }, on:()=>{}
-          };
-          disconnectUI();
-          connectBtn.click(); // triggers connect
-          setTimeout(()=>{
-            ok('Mock connect updates button', connectBtn.textContent.indexOf('Disconnect')>-1);
-            ok('Mock connect updates status', statusEl.textContent.indexOf('Connected:')===0 || statusEl.textContent.indexOf('Connected (')===0);
-
-            // Test 3: Disconnect toggles UI
-            connectBtn.click();
-            ok('Disconnect clears state', statusEl.textContent==='Not connected');
-            console.log('[Wallet Tests]
-' + results.join('
-'));
-          }, 0);
-        }catch(e){ console.warn('Test harness error', e); }
-      })();
+    // ===== Certifications Filter =====
+    (function(){
+      const filterButtons = document.querySelectorAll('.cert-filter-btn');
+      const certCards = document.querySelectorAll('.cert-card');
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to clicked button
+          button.classList.add('active');
+          
+          const filter = button.getAttribute('data-filter');
+          
+          // Show/hide certifications based on filter
+          certCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
     })();
   </script>
-</body>
-</html>
 
+</body></html>
